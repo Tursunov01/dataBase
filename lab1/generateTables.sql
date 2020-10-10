@@ -5,7 +5,7 @@ drop table agents;
 
 create table if not exists footballers(
     id serial,
-    name varchar(25) ,
+    name varchar(35) ,
     sex varchar(10),
     birthday date
     foot varchar(10),
@@ -33,6 +33,6 @@ create table if not exists agents(
 create table if not exists transfers(
     footballer int,
     club int,
-    birthday date,
+    agent int,
     position varchar(4)
 );
