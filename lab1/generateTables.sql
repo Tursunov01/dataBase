@@ -1,7 +1,7 @@
-drop table transfers;
-drop table footballers;
-drop table clubs;
-drop table agents;
+--drop table transfers;
+--drop table footballers;
+--drop table clubs;
+--drop table agents;
 
 create table if not exists footballers(
     id serial,
