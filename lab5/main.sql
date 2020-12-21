@@ -13,7 +13,7 @@ create table footballer_copy(data json);
 copy footballer_copy from 'C:\Jasur\projects\dataBase\lab5\save.json';
 --из json таблицы в первоначальную таблицу
 create table footballers2 as
-select d.* from footballer_copy, json_populate_record(null::footballers, doc) as d;
+select d.* from footballer_copy, json_populate_record(null::footballers2, doc) as d;
 --3) создать таблицу с типом json и сделать insert
 drop table orders;
 create table if not exists orders

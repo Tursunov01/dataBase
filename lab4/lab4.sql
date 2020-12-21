@@ -122,3 +122,4 @@ $$ language plpython3u;
 select name from local_agents where (local_agent.more).rating = 77
 
 select * from local_agents;
+

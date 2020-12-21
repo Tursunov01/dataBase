@@ -1,4 +1,4 @@
-create or replace function getfootballer(char) returns table
+create or replace function getFootballerTable(char) returns table
 (
 	id int,
 	name char,
@@ -15,5 +15,5 @@ $$
 	where foot = $1;
 $$ language sql;
 
-select * from getfootballer('left'); 
+--select * from getFootballerTable('left'); 
 --добавить операторы

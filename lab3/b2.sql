@@ -6,7 +6,7 @@ create or replace procedure update_foot(a int, b int) as
 $$
 begin
 	if a <= b then
-		update footballers_copy
+		update footballers
 		set foot = 'left'
 		where foot = 'right';
 		call update_foot(a + 1, b);

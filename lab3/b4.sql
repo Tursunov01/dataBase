@@ -14,3 +14,5 @@ begin
 end
 $$ language plpgsql;
 --переписать процеду
+
+call table_size();
